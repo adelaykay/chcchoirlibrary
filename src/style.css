@@ -1,0 +1,8 @@
+body {
+  background-color: #94aefc;
+}
+#app {
+  margin: 2.5vh;
+  height: 95vh;
+  max-height: 95vh;
+}

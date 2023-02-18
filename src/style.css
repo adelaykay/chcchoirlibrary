@@ -6,3 +6,12 @@ body {
   height: 95vh;
   max-height: 95vh;
 }
+#main-app, search {
+  background-color: #cacade;
+}
+#current-selection {
+  background-color: #1a1a23;
+}
+#dashboard {
+  min-height: 10vh;
+}

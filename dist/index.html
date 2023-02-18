@@ -18,75 +18,41 @@
     <div>
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
-          <div id="app" class="col-10 d-flex bg-white rounded-4 p-0">
-            <div id="main-app" class="col-lg-9 col-md-8 col-sm-12 rounded-4">
+          <div id="app" class="col-10 d-flex bg-white rounded-5 p-0 shadow">
+            <div id="main-app" class=" col-xl-9 col-lg-9 col-12 rounded-5">
               <div class="container">
                 <div
                   id="dashboard"
-                  class="row align-items-center bg-light rounded-start-4">
+                  class="row align-items-center rounded-4">
                   <div
-                    class="btn-toolbar flex-lg-row flex-sm-column-reverse justify-content-around p-2"
+                    class="btn-toolbar justify-content-around p-4"
                     role="toolbar"
                     aria-label="Toolbar with button groups">
+                    <!-- Off-Canvas -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                      <i class="fa fa-solid fa-bars fs-3"></i>
+                      <i class="fa fa-bars fs-4"></i>
                     </button>
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                      <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
-                      <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li>
-                                <hr class="dropdown-divider">
-                              </li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <form class="d-flex mt-3" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                    <div
-                      class="btn-group"
-                      role="group"
-                      aria-label="First group">
-                      <button type="button" class="btn btn-outline-secondary active">
-                        Scores
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        Audio
-                      </button>
-                      <button type="button" class="btn btn-outline-secondary">
-                        Video
-                      </button>
-                    </div>
+                    
+                    <!-- Nav Button Group -->
+                    <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="#">Scores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Audio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Video</a>
+                      </li>
+                    </ul>
+                    <!-- Search Form -->
                     <form class="d-flex m-2" role="search">
                       <input
-                        class="form-control me-2"
+                        class="search form-control me-2"
                         type="search"
                         placeholder="Composer or song title"
                         aria-label="Search" />
-                      <button class="btn btn-outline-secondary" type="submit">
-                        Search
-                      </button>
+                      
                     </form>
                   </div>
                 </div>
@@ -94,11 +60,50 @@
             </div>
             <div
               id="current-selection"
-              class="col-lg-3 col-md-4 d-sm-block d-none rounded-end-4"></div>
+              class="col-lg-3 d-md-block d-none rounded-end-5"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Off-Canvas Menu -->
+    <div class="offcanvas text-bg-dark offcanvas-start rounded-4 m-3" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 p-5">
+          <div class="card bg-transparent p-5">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="profile-image">
+            <div class="card-body text-center">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">@john_doe</p>
+            </div>
+          </div>
+          <hr class="divider">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home pe-3"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-bars pe-3"></i> My Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-heart pe-3"></i> Favorites</a>
+          </li>
+          <hr class="divider">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-gear pe-3"></i> Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-support pe-3"></i> Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-right-from-bracket pe-3"></i> Log out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="bundle.js"></script>
   </body>
 </html>

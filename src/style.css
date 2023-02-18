@@ -1,5 +1,5 @@
 body {
-  background-color: #94aefc;
+  background: linear-gradient(to bottom, #94aefc 0%, #7de6f0 100%);
 }
 #app {
   margin: 2.5vh;
@@ -7,11 +7,23 @@ body {
   max-height: 95vh;
 }
 #main-app, search {
-  background-color: #cacade;
+  background-color: #ffffff;
 }
 #current-selection {
   background-color: #1a1a23;
 }
 #dashboard {
   min-height: 10vh;
+}
+.btn-group .btn {
+  height: 2.5rem;
+}
+.nav-tabs > li.nav-item:hover {
+  border-bottom: 2px solid #4a80f0;
+}
+.search {
+  background-color: #e3e3e3;
+}
+.offcanvas-body::-webkit-scrollbar {
+  display: none;
 }

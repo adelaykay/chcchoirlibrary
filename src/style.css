@@ -24,6 +24,10 @@ body {
 .search {
   background-color: #e3e3e3;
 }
+.offcanvas-body * .nav-link:hover {
+  background-color: #4a80f0;
+  border-radius: 20px;
+}
 .offcanvas-body::-webkit-scrollbar {
   display: none;
 }
